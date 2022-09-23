@@ -4,27 +4,33 @@ body {
 }
 
 #app {
-  display: grid;
-  grid-template-columns: repeat(auto-fill, 200px);
+  display: flex;
   padding: 24px;
   gap: 24px;
-  justify-content: center;
+  flex-wrap: wrap;
 }
 
 .note {
   height: 200px;
-  box-sizing: border-box;
-  padding: 16px;
-  border: none;
   border-radius: 10px;
+  background-color: white;
   box-shadow: 0 0 7px rgba(0, 0, 0, 0.15);
+}
+.note textarea {
+  position: relative;
+  border: none;
   resize: none;
   outline: none;
   font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  height: 165px;
+  width: 165px;
+  border-radius: 10px;
+  padding: 16px;
 }
 
 .add-note {
   height: 200px;
+  width: 200px;
   border: none;
   outline: none;
   background: rgba(230, 230, 230, 0.2);
